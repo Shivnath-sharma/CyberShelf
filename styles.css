@@ -301,6 +301,11 @@ input[type="text"]:focus, .drop-zone:focus {
   margin-top: 0.5rem;
 }
 
+.preview img:hover{
+  background-color: #89530e;
+  color: #e3d19c;
+}
+
 .preview-no-image{
   font-size: 20px;
 }
