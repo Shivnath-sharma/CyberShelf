@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShelf</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <a class="brutalist-button">
+      <div class="claude-logo">
+        <span class="starburst">📚</span>
+        <span class="claude-text">CyberShelf</span>
+      </div>
+    </a>
+
+    <div id="layout" class="layout">
+      <div id="grid" class="grid">
+        <!-- Bookmarks will dynamically populate here -->
+      </div>
+    </div>
+    <div class="actions">
+      <button id="addBookmark">Add Bookmark</button>
+      <button id="deleteBookmark">Delete Selected</button>
+      <button id="showBookmarks">Show Bookmarks</button>
+    </div>
+  </div>
+
+  <!-- Show Bookmarks Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>All Bookmarks</h2>
+      <div id="bookmarksList" class="bookmarks-list">
+        <!-- Bookmarks will dynamically populate here -->
+      </div>
+      <p class="bookmarkCount">Total Bookmarks: <span id="bookmarkCount" class="bookmarkCount">0</span></p>
+      <div class="modal-actions">
+        <button id="closeModalBtn" class="closeModalBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bookmark Modal -->
+  <div id="bookmarkModal" class="modal">
+    <div class="modal-content">
+      <h2>Add Bookmark</h2>
+      <div class="bookmark-input">
+        <label for="bookmarkName"></label>
+        <input type="text" id="bookmarkName" placeholder="Enter bookmark name" />
+        <input type="text" id="bookmarkLink" placeholder="Enter bookmark link" />
+        <label for="bookmarkImage"></label>
+      </div>
+      <div id="dropZone" class="drop-zone">
+        <p>Drag & drop an image here or click to select</p>
+        <input type="file" id="bookmarkImage" accept="image/*" style="display: none;"/>
+      </div>
+      <div id="preview" class="preview">
+        <p class="preview-no-image">No image selected</p>
+      </div>
+      <div class="modal-actions">
+        <button id="saveBookmark" class="save-btn">Save</button>
+        <button id="cancelBookmark" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
