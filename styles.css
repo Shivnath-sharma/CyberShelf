@@ -38,6 +38,96 @@ body {
   box-shadow: 6px 6px 20px rgba(0, 209, 178, 0.7);
 }
 
+
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+    height: auto; /* Allow body to adjust height naturally */
+    align-items: stretch;
+    justify-content: flex-start; /* Adjust alignment */
+  }
+
+  .brutalist-button {
+    width: 90%; /* Full-width button */
+    height: 80px; /* Reduced height */
+    top: 10px; /* Adjust top margin */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  .starburst {
+    font-size: 20px; /* Scale down font */
+    margin-right: 4px; /* Adjust spacing */
+  }
+
+  .claude-text {
+    font-size: 20px; /* Consistent scaling */
+    padding-left: 8px; /* Smaller padding */
+  }
+
+  .container {
+    width: 95%; /* Reduce overall width */
+    padding: 0.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Compact grid */
+    gap: 0.4rem; /* Reduce spacing */
+  }
+
+  input[type="text"], input[type="file"] {
+    width: 100%; /* Full-width inputs */
+    font-size: 14px; /* Smaller font size */
+    padding: 0.8rem; /* Adjust padding */
+  }
+
+  .actions {
+    flex-direction: column; /* Stack buttons */
+    gap: 0.8rem; /* Reduce spacing */
+    width: 100%; /* Ensure full width */
+    padding: 0 1rem; /* Add side padding */
+    bottom: 10px; /* Adjust positioning */
+  }
+
+  .actions button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.6rem 1.2rem; /* Adjust padding */
+  }
+
+  .modal-content {
+    height: auto; /* Flexible height */
+    width: 90%; /* Full width within viewport */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .bookmarks-list {
+    max-height: 150px; /* Reduce max height */
+    font-size: 14px; /* Adjust font size for list */
+  }
+
+  .bookmark-item {
+    gap: 0.4rem; /* Reduce spacing */
+    padding: 0.4rem; /* Compact padding */
+  }
+
+  .bookmark-item img {
+    width: 40px; /* Smaller image size */
+    height: 40px;
+  }
+
+  .drop-zone {
+    padding: 1rem; /* Compact drop-zone */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .drop-zone:hover {
+    transform: none; /* Simplify hover effects for smaller devices */
+  }
+}
+
+
 .brutalist-button::before {
   content: "★";
   position: absolute;
@@ -82,21 +172,6 @@ body {
 }
 
 
-.button-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  position: relative;
-  z-index: 2;
-}
-
-.brutalist-button:hover .button-text {
-  transform: skew(-15deg);
-}
-
-.brutalist-button:active .button-text {
-  transform: skew(15deg);
-}
 
 /* Container and Grid Layout */
 .container {
