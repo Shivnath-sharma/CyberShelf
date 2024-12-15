@@ -49,7 +49,7 @@ input[type="text"], input[type="file"] {
 }
 
 .preview img {
-  max-width: 120px;
+  max-width: 50px;
   margin-bottom: 30px;
 }
 
@@ -144,7 +144,7 @@ input[type="text"], input[type="file"] {
 }
 
 .preview img {
-  max-width: 150px;
+  max-width: 50px;
   margin-bottom: 30px;
 }
 
