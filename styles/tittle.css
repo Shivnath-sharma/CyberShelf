@@ -1,0 +1,52 @@
+/* Buttons */
+.brutalist-button {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 150px;
+  background-color: #222222; /* Darker background */
+  color: #00d1b2; /* Vibrant text */
+  text-decoration: underline;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  border: 5px dashed #ffffff;
+  outline: 4px dotted #ff00aa;
+  box-shadow: 4px 4px 15px rgba(255, 0, 170, 0.5);
+  transition: transform 0.3s ease-in-out;
+  padding: 0px 12px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  box-shadow: 6px 6px 20px rgba(0, 209, 178, 0.7);
+}
+
+
+.claude-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.starburst {
+  font-size: 80px;
+  color: #eb6c22;
+  margin-right: 6px;
+  text-shadow: 2px 2px 0 #1a1a1a;
+  transition: transform 0.2s ease-out;
+  transform: rotate(-15deg) scale(1.1);
+}
+
+
+.claude-text {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  padding-left: 80px;
+  text-shadow: 2px 2px 0 #e3d19c;
+}

@@ -1,0 +1,29 @@
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: space-around; 
+  gap: 2rem;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; 
+  max-width: 600px; 
+}
+
+.actions button, .save-btn, .cancel-btn, .closeModalBtn{
+  background-color: #333333;
+  color: #ffdd57;
+  font-family: "Fira Sans", sans-serif;
+  border: 3px solid #00bcd4;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-align: center;
+}
+
+.actions button:hover {
+  background-color: #444444;
+  transform: rotate(2deg) scale(1.1);
+}

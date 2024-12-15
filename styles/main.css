@@ -1,0 +1,138 @@
+
+
+
+
+
+@media screen and (max-width: 680px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: flex-start; /* Center content on mobile */
+  }
+
+  .brutalist-button {
+    width: 90%; /* Responsive width */
+    height: 120px; /* Slightly smaller height */
+    font-size: 1.2rem; /* Scaled text */
+    padding: 0.5rem;
+    box-shadow: 3px 3px 10px rgba(0, 209, 178, 0.5); /* Reduced shadow intensity */
+    top: 10px; /* Less offset from the top */
+  }
+
+  .container {
+    width: 95%; /* Maximize space utilization */
+    padding: 1rem; /* Consistent padding */
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Better fit */
+    gap: 0.8rem; /* Maintain spacing */
+  }
+
+  .actions {
+    flex-direction: column; /* Stack buttons on mobile */
+    gap: 1rem; /* Spaced out buttons */
+    padding: 1rem; /* Consistent padding */
+    position: static; /* Inline positioning for smaller screens */
+    width: 100%;
+  }
+
+  .actions button {
+    padding: 0.8rem; /* Adjust padding for smaller screen */
+    font-size: 1rem; /* Scale text size */
+  }
+
+  input[type="text"], input[type="file"] {
+    width: 100%; /* Ensure full width within the container */
+    max-width: 100%; /* Prevent overflow */
+    font-size: 0.9rem; /* Smaller font for better fit */
+    padding: 0.6rem; /* Adjust padding for smaller screens */
+    margin-bottom: 0.5rem; /* Add spacing below inputs */
+  }
+
+
+  .modal-content {
+    width: 95%; /* Ensure modal fits in smaller screens */
+    padding: 1rem;
+    max-width: 600px; /* Prevent large modals */
+    overflow: hidden; 
+  }
+
+  .container {
+    width: 95%; /* Shrink container width for mobile */
+    padding: 1rem;
+  }
+
+  .bookmarks-list {
+    max-height: 200px; /* Reduce height */
+    font-size: 0.9rem; /* Smaller text for bookmarks */
+  }
+
+  .bookmark-item {
+    padding: 0.5rem; /* Compact padding */
+    gap: 0.5rem; /* Reduced spacing */
+  }
+
+  .bookmark-item img {
+    width: 40px; /* Smaller image size */
+    height: 40px;
+  }
+
+  .drop-zone {
+    font-size: 0.9rem; /* Scale text */
+    padding: 0.8rem; /* Reduce padding */
+  }
+
+  .drop-zone:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+  }
+}
+
+
+
+
+
+
+/* Container and Grid Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+  background-color: #1e1e1e; /* Almost black */
+  color: #ffdd57; /* Bright yellow */
+  border: 4px solid #ff4081;
+  outline: 2px dotted #212121;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.4s, transform 0.2s ease-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: fill;
+  border: 2px dashed #00d1b2;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #333333;
+}
+
+
+
+
+

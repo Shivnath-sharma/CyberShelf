@@ -1,0 +1,14 @@
+/* General Styles */
+body {
+  font-family: "Roboto Mono", monospace; /* New font */
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
